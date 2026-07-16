@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth global transitions for UI elements */
+@layer base {
+  button, input, select, textarea, a {
+    @apply transition-all duration-200;
+  }
+}
