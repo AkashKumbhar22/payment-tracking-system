@@ -29,15 +29,3 @@ Custom token claims are written into the token payload via `authentication/seria
 
 ---
 
-## 🚀 Execution & Local Setup Guide
-
-Because Docker composition constraints vary across host environments, this system features dedicated **Windows PowerShell** scripts to establish localized environments, resolve dependencies, and launch concurrent runtimes smoothly.
-
-### Prerequisites
-* Python 3.10+
-* Node.js (v18+)
-
-### 1. Spin Up the Backend API & DB
-Open a PowerShell console and execute:
-```powershell
-.\run_backend.ps1
