@@ -11,9 +11,7 @@ The platform implements an automated state machine that evaluates invoice metric
 * **Standard Value Flow ($\le \$10,000$):** Automatically spins up exactly **one** approval node assigned to the target reviewer. Shifting to an `APPROVED` state requires a single confirmation signature.
 * **High Value Flow ($> \$10,000$):** Dynamically enforces a strict, sequential **two-stage** signature chain requiring two distinct approvers. The invoice status remains pinned at `PENDING_APPROVAL` at Stage 1 and advances to `APPROVED` only when Stage 2 records a success token.
 
-> ⚠️ **Global Workflow Override:** Any single absolute `REJECT` action recorded at any phase of the workflow instantly bypasses remaining nodes and short-circuits the target invoice status directly to `REJECTED`.
 
----
 
 ## 🔒 Security Architecture
 
